@@ -1,0 +1,77 @@
+// set-product.mongodb
+
+use("pet_store")
+
+db.products.updateOne(
+  // query
+  {_id: 1},
+  // change => operators
+  {
+    $set: {
+      price: 3200,
+    }
+  },
+  {_id: 2},
+  // change => operators
+  {
+    $set: {
+      price: 260,
+    }
+  },
+  {_id: 3},
+  // change => operators
+  {
+    $set: {
+      price: 300,
+    }
+  },
+  {_id: 4},
+  // change => operators
+  {
+    $set: {
+      price: 150,
+    }
+  },
+  {_id: 5},
+  // change => operators
+  {
+    $set: {
+      price: 200,
+    }
+  },
+  {_id: 6},
+  // change => operators
+  {
+    $set: {
+      price: 3100,
+    }
+  },
+  {_id: 7},
+  // change => operators
+  {
+    $set: {
+      price: 6500,
+    }
+  },
+  {_id: 8},
+  // change => operators
+  {
+    $set: {
+      price: 2500,
+    }
+  },
+  {_id: 9},
+  // change => operators
+  {
+    $set: {
+      price: 3000,
+    }
+  },
+  {_id: 10},
+  // change => operators
+  {
+    $set: {
+      price: 4000,
+    }
+  }
+)
