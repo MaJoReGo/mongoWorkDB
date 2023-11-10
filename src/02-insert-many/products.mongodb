@@ -1,0 +1,168 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+    {
+        _id: 1,
+        title: "Aro rosa",
+        price: 50,
+        description: "Aro rosa de caucho, fuerte para grandes perros",
+        category: "Toys",
+        image: "url/images/aroRosa.png"  // Reemplaza con la URL real y completa de la imagen
+      },
+    {
+      _id: 2,
+      title: "Aro fucsia",
+      price: 30,
+      description: "Aro fucsia de caucho, fuerte para grandes perros",
+      category: "Toys",
+      image: "url/images/aroFucsia.png"
+    },
+    {
+        _id: 3,
+        title: "Hueso naranja blanco",
+        price: 60,
+        description: "Hueso naranja blanco de caucho, fuerte para grandes perros",
+        category: "Toys",
+        image: "url/images/HuesoNaranjaBlanco.png"
+      },
+      {
+        _id: 4,
+        title: "Cuerda con pelota naranja",
+        price: 70,
+        description: "Cuerda con pelota naranja de caucho, fuerte para grandes perros",
+        category: "Toys",
+        image: "url/images/CuerdaConPelotaNaranja.png"
+      },
+      {
+        _id: 5,
+        title: "Conjunto tres aros",
+        price: 310,
+        description: "Conjunto tres aros, en caucho, perfecto para que tu perro se divierta",
+        category: "Toys",
+        image: "url/images/ConjuntoTresAros.png"
+      },
+      {
+        _id: 6,
+        title: "Alita de pollo verde",
+        price: 980,
+        description: "Alita de pollo verde, en caucho",
+        category: "Toys",
+        image: "url/images/AlitaDePolloVerde.png"
+      },
+      {
+        _id: 7,
+        title: "Cuerda pelota verde",
+        price: 12,
+        description: "Cuerda pelota verde, de caucho y de una cuerda resistente",
+        category: "Toys",
+        image: "url/images/CuerdaPelotaVerde.png"
+      },
+      {
+        _id: 8,
+        title: "Conjunto tres pelotas cuerda",
+        price: 432,
+        description: "Conjunto tres pelotas cuerda, de diferentes colores",
+        category: "Toys",
+        image: "url/images/ConjuntoTresPelotasCuerda.png"
+      },
+      {
+        _id: 9,
+        title: "Hueso azul cielo",
+        price: 544,
+        description: "Hueso azul cielo pequeño, para que tu pequeño amigo no se pierda de la diversion",
+        category: "Toys",
+        image: "url/images/HuesoAzulCielo.png"
+      },
+      {
+        _id: 10,
+        title: "Hueso pesado azul",
+        price: 98,
+        description: "Hueso pesado azul, para ejercitar a tu perro, mientras se divierte",
+        category: "Toys",
+        image: "url/images/HuesoPesadoAzul.png"
+      },
+      {
+        _id: 11,
+        title: "Juguete forma perro",
+        price: 154,
+        description: "Juguete forma perro, para que tu perro, tenga un amiguito para jugar",
+        category: "Toys",
+        image: "url/images/JugueteFormaPerro.png"
+      },
+      {
+        _id: 12,
+        title: "Juguete forma pato",
+        price: 23,
+        description: "Juguete forma pato, para que tu perro, tenga un amiguito para jugar",
+        category: "Toys",
+        image: "url/images/JugueteFormaPato.png"
+      },
+      {
+        _id: 13,
+        title: "Juguete verde",
+        price: 33,
+        description: "Juguete verde, para perros con una gran mordida",
+        category: "Toys",
+        image: "url/images/Juguete.png"
+      },
+      {
+        _id: 14,
+        title: "Peluche cangrejo",
+        price: 233,
+        description: "Peluche cangrejo, para que tu peludo, tenga un amiguito para dormir ",
+        category: "Toys",
+        image: "url/images/PelucheCangrejo.png"
+      },
+      {
+        _id: 15,
+        title: "Rueda negra",
+        price: 555,
+        description: "Rueda negra, resistente a mordidas",
+        category: "Toys",
+        image: "url/images/RuedaNegra.png"
+      },
+      {
+        _id: 16,
+        title: "Peluche perro",
+        price: 233,
+        description: "Peluche perro, para que tu peludo, tenga un amiguito para dormir",
+        category: "Toys",
+        image: "url/images/PeluchePerro.png"
+      },
+      {
+        _id: 17,
+        title: "Pelota rosada puntas",
+        price: 666,
+        description: "Pelota rosada puntas, para tu amigo mordelon",
+        category: "Toys",
+        image: "url/images/PelotaRosadaPuntas.png"
+      },
+      {
+        _id: 18,
+        title: "Pelota roja",
+        price: 88,
+        description: "Pelota roja, de caucho, para grandes mordidas",
+        category: "Toys",
+        image: "url/images/PelotaRoja.png"
+      },
+      {
+        _id: 19,
+        title: "Pelota morada puntas",
+        price: 3,
+        description: "Pelota morada puntas, para tu amigo mordelon",
+        category: "Toys",
+        image: "url/images/PelotaMoradaPuntas.png"
+      },
+    {
+      _id: 20,
+      title: "Hueso verde dador comida",
+      price: 80,
+      description: "Hueso verde dador comida, para que tu perro pase horas de juego geniales",
+      category: "Accessories/Toys",
+      image: "url/images/HuesoVerdeDadorComida.png"
+    }
+  ])
