@@ -1,0 +1,62 @@
+//Modifica el parametro llamado inventary 
+// de su valor true a false.
+
+db.products.updateMany(
+    // query
+    { category: "Juguetes" },
+    // update - operators
+    {
+      $set: {
+        inventary: false
+      }
+    }
+ )
+ 
+ //Realizar la inserción de un nuevo atributo a productos de (2) una categoría de productos registrados ////  anteriormente en la base datos.
+
+ db.products.updateMany(
+    // query
+    { categoryR: "Ropa" },
+    // update - operators
+    {
+      $set: {
+        nuevaPrenda: "Chaqueta para agua"
+      }
+    }
+)
+db.products.updateMany(
+    // query
+    { categoryA: "Accesorios" },
+    // update - operators
+    {
+      $set: {
+        nuevoAccesorio: "Moño con correa"
+      }
+    }
+)
+
+// Realizar la actualización del valor  del nuevo atributo a productos de (1) una categoría de productos registrados anteriormente en la base datos.
+
+db.products.updateMany(
+    // query
+    { categoryA: "Accesorios" },
+    // update - operators
+    {
+      $set: {
+        nuevoAccesorio: "Moño verde con correa"
+      }
+    }
+)
+
+//Cambia el nombre del atributo : description por specification   a  (1) una categoría de productos registrados anteriormente en la base datos usar el parámetro $rename.
+
+db.products.updateMany(
+    // query
+    { category: "Accesorios" },
+    // update - operators
+    {
+      $rename: {
+        categoryA: "specification"
+      }
+    }
+)
